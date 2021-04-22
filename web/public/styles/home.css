@@ -1,0 +1,408 @@
+.home {
+  width: calc(100% - 150px);
+  height: calc(100% - 7%);
+  position: absolute;
+  top: 4%;
+  left: 150px;
+}
+
+.block__title {
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+}
+
+.home__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.home__subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2F80ED;
+  margin-bottom: 6px;
+}
+
+.create__profile-block {
+  display: flex;
+  align-items: center;
+}
+
+.create__profile__btn {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  font-weight: 600;
+  border-bottom: solid 2px #2F80ED;
+}
+
+.home__content {
+  display: flex;
+  width: auto;
+  height: 92%;
+  margin-top: 2%;
+  /* background-color: rgb(40, 133, 133); */
+}
+
+.content__credit-card {
+  display: flex;
+  justify-content: center;
+  width: 47%;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(0, 0, 0, 0.1) 1.5px;
+  box-shadow: 0px 4px 3px -2px rgb(5, 5, 5, 0.3);
+  overflow: hidden;
+}
+
+.content__notifications {
+  display: flex;
+  justify-content: center;
+  width: 47%;
+  height: 50%;
+  margin-left: 3%;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(0, 0, 0, 0.1) 1.5px;
+  box-shadow: 0px 4px 3px -2px rgb(5, 5, 5, 0.3);
+  overflow: hidden;
+}
+
+#inner {
+  width: 92%;
+  overflow: auto;
+  height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.inner__navbar {
+  display: flex;
+  margin: 20px 0px 10px 0px;
+  justify-content: space-between;
+}
+
+.inner__navbar-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.inner__navbar__show-more-div {
+  display: flex;
+}
+
+.inner__navbar__show-more {
+  font-family: "Open Sans", sans-serif;
+  color: #2f80ed;
+  font-size: 13px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.show-more__icon {
+  width: 11px;
+  padding-top: 4px;
+}
+
+.inner__separator {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.inner__content__credit-card {
+  display: flex;
+  height: 60%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.credit-card__block {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.credit-card__block__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit-card__block__top h1 {
+  color: 219653;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.block__top-icon-gold {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.credit-card__historic {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.credit-card__historic-inner {
+  margin-top: 10px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.credit-card__historic__note {
+  display: flex;
+  justify-content: space-between;
+}
+
+.historic__note__amount {
+  font-size: 12px;
+  color: #eb5757;
+  font-weight: 600;
+}
+
+.historic__note__separator {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.credit-card__icon {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 20px;
+  width: 30%;
+}
+
+.credit-card__bottom {
+  display: flex;
+  width: 100%;
+  height: 18%;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-card__bottom button {
+  background-color: #ffcf2c;
+  border: none;
+  color: white;
+  padding: 9px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input__Container i {
+  position: absolute;
+}
+
+.input__Container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+.icon {
+  padding-top: 14px;
+  padding-left: 7px;
+  color: #818181;
+  width: 30px;
+  text-align: left;
+  font-size: 17px;
+}
+
+.search__block {
+  margin-top: 20px;
+  width: 92%;
+}
+
+.searchbox {
+  border: 1px solid rgba(47, 128, 237, 0.3);
+  width: 80%;
+  padding: 15px;
+  padding-left: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.under__searchbox {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.under__searchbox__logo {
+  width: 65px;
+  margin-left: 3px;
+}
+
+.inner__navbar__trash {
+  font-family: "Open Sans", sans-serif;
+  color: #2f80ed;
+  font-size: 13px;
+  margin-right: 5px;
+  /* cursor: pointer; */
+  display: flex;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 27%;
+  right: 45%;
+  height: 13px;
+  width: 13px;
+  border: solid 1px #bbd9f5;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #bbd9f5;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgba(47, 128, 237, 0.1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 3px;
+  top: 0;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.trash__icon-a {
+  padding-top: 7px;
+}
+
+.trash__icon {
+  width: 30px;
+}
+
+.notification__block {
+  height: 56%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.notification__block-inner {
+  margin-top: 10px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.notification__block--selector {
+  list-style: none;
+  color: black;
+}
+
+.notification__block--selector:hover {
+  background-color: rgba(111, 207, 151, 0.2);
+}
+
+.notification__block__date {
+  width: 100%;
+}
+
+.notification__note__date {
+  float: right;
+  color: #828282;
+}
+
+.notification__block__historic__note {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.notification__block__historic__note h2 {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.notification__note__separator {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

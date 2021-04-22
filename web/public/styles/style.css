@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.text-danger {
+    color: rgb(250, 54, 54) !important;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.area {
+    background: #FFF;
+    width: calc(100% - 230px);
+    height: calc(100% - 10%);
+    position: absolute;
+    top: 10%;
+    left: 230px;
+}
+
+body {
+    background: #fff;
+}
+
+section {
+    height: 85vh;
+    background-color: #F6FAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+}
+
+.block__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block__text h1 {
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.block__text p {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.block__text__button {
+    display: flex;
+    margin-top: 55px;
+}
+
+.add__users__button button {
+    background-color: #2F80ED;
+    border: none;
+    color: white;
+    padding: 9px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button__contact {
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-weight: 600;
+    border-bottom: solid 2px #2F80ED;
+}
+
+.block__img {
+    width: 50%;
+}
+
+@media (max-width: 1700px) {
+    .block__text h1 {
+        font-size: 38px;
+    }
+
+    .block__text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .block__text h1 {
+        font-size: 28px;
+    }
+
+    .block__text p {
+        font-size: 18px;
+    }
+
+    .block__text__button {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .add__users__button button {
+        padding: 7px 30px;
+        font-size: 12px;
+    }
+
+    .button__contact {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        width: 88%;
+    }
+
+    .block__text h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .block__text {
+        margin-top: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block__text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .block__text p {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .block__img {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .block__text h1 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .block__text p {
+        font-size: 13px;
+    }
+
+    .block__text__button {
+        margin-top: 30px;
+    }
+
+    .add__users__button button {
+        padding: 7px 25px;
+        font-size: 11px;
+    }
+
+    .button__contact {
+        font-size: 11px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    section {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 310px) {
+    .add__users__button {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,170 @@
+.container--create__account {
+    width: 80%;
+    display: flex;
+    height: 95%;
+}
+
+.form__title {
+width: 500px;
+margin-bottom: 25px;
+margin-top: 15px;
+}
+
+.label__separator {
+width: 500px;
+margin-bottom: 17px;
+margin-top: 12px;
+opacity: 0.2;
+}
+
+.conditions {
+display: flex;
+flex-direction: column;
+margin-top: 15px;
+width: 489px;
+}
+
+.conditions div {
+display: flex;
+}
+
+.container--input {
+display: block;
+position: relative;
+padding-left: 15px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.container--input input {
+position: absolute;
+left: 0;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+.checkmark {
+position: absolute;
+top: 27%;
+right: 45%;
+height: 13px;
+width: 13px;
+border: solid 1px #bbd9f5;
+}
+
+.container--input:hover input ~ .checkmark {
+background-color: #bbd9f5;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container--input input:checked ~ .checkmark {
+background-color: rgba(47, 128, 237, 1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container--input input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container--input .checkmark:after {
+left: 3px;
+top: 0;
+width: 5px;
+height: 10px;
+border: solid rgb(255, 255, 255);
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.conditions__accept {
+  margin-left: 10px;
+  margin-bottom: 7px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.remember {
+margin-left: 10px;
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+}
+
+@media (max-width: 600px) {
+.container--create__account {
+    width: 94%;
+}
+
+.section {
+    height: 100%;
+}
+
+.form__title {
+    width: 95%;
+}
+
+.container {
+    height: 100%;
+}
+
+.home__add-users {
+    height: auto;
+}
+
+.home__content__create__account {
+    height: auto;
+}
+
+.form__container {
+    width: 98%;
+}
+
+.form__title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.label__container {
+    width: 95%;
+}
+
+.label__separator {
+    display: none;
+}
+
+.input__add-users, select, textarea {
+    width: 95%;
+}
+
+.conditions {
+    width: 93%;
+}
+
+.conditions__accept {
+    font-size: 12px;
+}
+
+.remember {
+    font-size: 12px;
+}
+
+.create__account-btn button {
+    margin-bottom: 20px;
+}
+}

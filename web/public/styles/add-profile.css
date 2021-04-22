@@ -1,0 +1,32 @@
+.block__note--add-profile {
+    display: flex;
+    justify-content: center;
+    width: 92%;
+    flex-direction: column;
+}
+
+.block__note-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.searchbox {
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    width: 85%;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;  
+}
+
+.searchbox-textarea {
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    width: 85%;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
+}

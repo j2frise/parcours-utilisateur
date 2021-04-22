@@ -1,0 +1,222 @@
+.home__content__avis-details {
+    display: flex;
+    width: auto;
+    margin-top: 2%;
+    flex-direction: column;
+}
+
+.host__user-block {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.host__user-separator--left {
+    width: 37%;
+    height: 1px;
+    opacity: .3;
+    color: #2F80ED;
+    /* margin-right: 25px; */
+}
+
+.host__user-separator--rigth {
+    width: 37%;
+    height: 1px;
+    opacity: .3;
+    color: #2F80ED;
+    /* margin-left: 25px; */
+}
+
+.host__information {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.host__information__img {
+    width: 100px;
+}
+
+.host__information__details {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 8px;
+    justify-content: center;
+}
+
+.host__information__details h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.host__information__details p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.host__users-note {
+    display: flex;
+    align-items: center;
+}
+
+.host__users-note p {
+    margin-right: 5px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.stars__block--margin {
+    margin-top: 10px;
+}
+
+/* .stars__block {
+    margin-top: 10px;
+} */
+
+.fa__avis-details {
+    width: 27px;
+    height: auto;
+    color: #27AE60;
+}
+
+.block--avis--details--chat {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    height: calc(100% - 30px);
+    margin-top: 30px;
+}
+
+.block--chat {
+    display: flex;
+}
+
+.block--chat:nth-child(2) {
+    margin-top: 20px;
+}
+
+.block--chat--rigth {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.block--chat--rigth div {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.block--chat--rigth img {
+    width: 100px;
+    height: 100px;
+}
+
+.block--chat--rigth h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+.block--chat div {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.block--chat:nth-child(2) div {
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.block--chat img {
+    width: 100px;
+    height: 100px;
+}
+
+.block--chat h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+    margin-left: 15px;
+}
+
+.block--chat:nth-child(2) h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+.bubble-chat {
+    margin-top: 10px;
+    position: relative;
+	max-width: 100%;
+	background-color: #fff;
+	padding: 1.125em 1.5em;
+	font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+	border-radius: 0 1rem 1rem 1rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    color: #234A7B;
+}
+
+.bubble-chat-first {
+    margin-top: 10px;
+    position: relative;
+	max-width: 100%;
+	background-color: #fff;
+	padding: 1.125em 1.5em;
+	font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+	border-radius: 1rem 0rem 1rem 1rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    color: #234A7B;
+}
+
+.block--chat:nth-child(2) {
+    display: flex;
+    justify-content: end;
+}
+
+.bubble-chat-date {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    color: #234A7B;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+@media (max-width: 1600px) {
+    .host__user-separator--left {
+        width: 27%;
+        margin-right: 20px;
+    }
+
+    .host__user-separator--rigth {
+        width: 32%;
+    }
+
+    .host__information {
+        width: auto;
+    }
+
+    .home__content__avis-details {
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+}
