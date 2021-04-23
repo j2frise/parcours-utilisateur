@@ -1,0 +1,63 @@
+<div class="area">
+          <div class="home">
+              <div class="block__title">
+                  <div>
+                    <p class="home__subtitle">Veuillez mettre le nom ou l’identifiant du client</p>
+                    <h2 class="home__title">Rechercher un client</h2>
+                  </div>
+                  <div class="create__profile-block">
+                    <a class="create__profile__btn" href="?p=add-user">Créer un nouveau client</a>
+                  </div>
+              </div>
+              <div class="home__content">
+                <div class="search__block">
+                    <form id="search">
+                        <div class="input__Container">
+                            <i class="fa fa-search icon"> </i>
+                            <input id="inptxt" class="searchbox"  type="text" name="text" class="search" placeholder="Rechercher..." onKeyUp="divo(this.value)">
+                        </div>
+                    </form>
+                    <div class="under__searchbox">by <img class="under__searchbox__logo" src="<?=BASE_URL.'assets/Logo_2.svg'?>" alt="Logo of customotel"> </div>
+                    <div id="div-users" class="users__list">
+                        
+                        
+                            <div class="home__content__avis">
+                                <div class="content__avis">
+                                    <div id="inner__avis">
+                                        <div class="avis__block">
+                                            <div class="notification__block-inner">
+                                                <div href="#" class="notification__block--avis">
+                                                    <div class="notification__block__historic__note">
+                                                        <div class="block__name">
+                                                            <h2 class="avis__name-name">Nom</h2>
+                                                        </div>
+                                                        <div class="block__id">
+                                                            <h2>Identifiant</h2>   
+                                                        </div>
+                                                        <div class="block__note">
+                                                            <h2>Note Globale</h2>   
+                                                        </div>
+                                                        <div class="block__nb__avis">
+                                                            <h2>Nombre d'avis</h2>   
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="notification__note__separator">
+                                            <div class="block__overflow__avis" id="content_search">
+                                    
+                                                
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        
+                    </div>
+                    
+                </div>
+              </div>
+          </div>
+        </div>

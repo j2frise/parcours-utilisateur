@@ -1,5 +1,5 @@
 <?php 
-    if($_SESSION['usr_hetic']){
+    if($_SESSION['connect'] && $_SESSION['token']){
         header('location:?p=dashboard');
     }
 ?>
@@ -16,24 +16,21 @@
                         </div>
                     
                         <div class="label__container">
-                        <p class="center retour"></p>
+                        <p class="center message"></p>
                         <div class="label__container">
-                        <label for="fname">Adresse mail :</label>
-                        <input class="input__add-users" type="text" id="fname" name="firstname" placeholder="Email">
+                        <label for="inputEmail">Adresse mail :</label>
+                        <input class="input__add-users require" type="text" id="inputEmail"  placeholder="Email">
                         </div>
 
                         <div class="label__container">
-                        <label for="fname">Mot de passe :</label>
-                        <input class="input__add-users" type="password" id="fname" name="firstname" placeholder="mot de passe">
+                        <label for="inputPassword">Mot de passe :</label>
+                        <input class="input__add-users require" type="password" id="inputPassword"  placeholder="mot de passe">
                         </div>
                         <div class="block__login-btn">
-                        <button class="btn-login">Se connecter</button>
+                        <button class="btn-login" id="submit">Se connecter</button>
                         </div>
 
                         <hr class="login--separator">
-
-                        <p class="not__register--text">Vous n'avez pas de compte ? <a class="button__not-register" href="create-account.html">Créez en un !</a></p>
-                        
                     </form>
                 </div> 
             </div>

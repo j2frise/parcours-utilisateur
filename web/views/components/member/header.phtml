@@ -1,74 +1,67 @@
 <?php 
-    if(!$_SESSION['usr_hetic']){
+    if(!($_SESSION['connect'] && $_SESSION['token'])){
         header('location:?p=login');
     }
-
-    $me = $usr->getUser($_SESSION['usr_hetic']);
-    if(!$_SESSION['is_admin'] && is_null($me->firstname) && $_GET['p']!=='account'){
-        header('location:?p=account');
-    }
 ?>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <title>
-
-    </title>
-    <!-- Bootstrap core CSS -->
-    <link href="<?=BASE_URL.'dist/css/bootstrap.min.css'?>" rel="stylesheet">
-    <link href="<?=BASE_URL.'dist/css/style.css'?>" rel="stylesheet">
-    <link href="<?=BASE_URL.'dist/css/dashboard.css'?>" rel="stylesheet">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/reset.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/sidebar.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/style.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/home.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/users.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/avis.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/searcbox.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/login.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/addUsers.css'?>">
+    <link rel="stylesheet" href="<?=BASE_URL.'styles/create--account.css'?>">
+    <title>Dashboard</title>
 
     <script>
-      let urlCreated = <?php echo json_encode(REQUEST.'ctrl_createdUser.php'); ?>;
-      let urlUpdatePassword = <?php echo json_encode(REQUEST.'ctrl_updatePassword.php'); ?>;
-      let urlUpdateProfil = <?php echo json_encode(REQUEST.'ctrl_updateProfil.php'); ?>;
+      let headers = {
+        "Content-Type": "application/json",
+        "Api-Key": <?php echo json_encode(APIKEY); ?>,
+        "Authorization": <?php echo json_encode($_SESSION['token']); ?>
+      }
     </script>
-  </head>
-  <body>
-    
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Gestion de contact</a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <input class="form-control form-control-dark w-100 text-right" readonly="readonly" type="text" value="<?=!$me->lastname?$me->pseudo:$me->firstname.' '.$me->lastname ?>">
-  <ul class="navbar-nav px-3">
-    <li class="nav-item text-nowrap">
-      <a class="nav-link" href="<?=REQUEST.'logout.php'?>">Déconnexion</a>
-    </li>
-  </ul>
-</header>
 
-<div class="container-fluid">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-      <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link <?=$_GET['p']=='dashboard'?'active':''?>" aria-current="page" href="?p=dashboard">
-              <span data-feather="home"></span>
-              Accueil
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link <?=$_GET['p']=='account'?'active':''?>" href="?p=account">
-              <span data-feather="file"></span>
-              Mon compte
-            </a>
-          </li>
-          <?php if($_SESSION['is_admin']){ ?>
-          <li class="nav-item">
-            <a class="nav-link <?=$_GET['p']=='add_user'?'active':''?>" href="?p=add_user">
-              <span data-feather="shopping-cart"></span>
-              Ajouter un utilisateur
-            </a>
-          </li>
-          <?php } ?>
-        </ul>
-      </div>
-    </nav>
+    <script>
+      let url = <?php echo json_encode(API_URL); ?>;
+    </script>
+</head>
+<body>
+        <div class="top__menu">
+          <div class="top__menu__nav">
+              <div class="nav__list">
+                 
+              </div>
+              <div class="nav__list">
+                <li class="nav__list__li"><a href="#">JODGE</a></li>
+                <li class="nav__list__li"><a href="controllers/logout.php">Déconnexion</a></li>
+              </div>
+          </div>
+        </div>
+        <div class="main-menu__block__searchbox">
+            <div class="main-menu__block__searchbox__container">
+                <h2>Hakennals</h2>
+                <div class="main-menu__block__searchbox--content-flex">
+                    <h2>Entité :</h2>
+                    <input class="main-menu__block__searchbox__input" type="text" name="text" class="search" placeholder="">
+                </div>
+                <div class="main-menu__block__searchbox--content-flex">
+                    <h2>Recherche :</h2>
+                    <input class="main-menu__block__searchbox__input" type="text" name="text" class="search" placeholder="">
+                </div>
+                <div class="main-menu__block__searchbox--content-flex--3">
+                    <h2>Références :</h2>
+                    <div>
+                        <input class="main-menu__block__searchbox__input--3" type="text" name="text" class="search" placeholder="">
+                        <input class="main-menu__block__searchbox__input--3" type="text" name="text" class="search" placeholder="">
+                    </div>
+                </div>
+                <a href="?p=dashboard" class="back--to-home">Retourner à l'accueil</a>
+            </div>
+        </div>

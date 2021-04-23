@@ -29,5 +29,7 @@
         public function cryptPass($password) {
             return hash('sha512',$password);
         }
+
+        
     }
 ?>

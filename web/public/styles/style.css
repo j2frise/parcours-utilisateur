@@ -6,6 +6,12 @@
     padding: 10px 0;
 }
 
+.text-success {
+    color: rgb(7, 167, 15) !important;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0;
+}
+
 .center {
     text-align: center !important;
 }

@@ -1,16 +1,12 @@
 <?php 
-    // paramètres base de donnéees
-    define('DB_NAME', "gestion_contact");
-    define('DB_USER', "root");
-    define('DB_PASSWORD', "");
-    define('HOST', "localhost");
-    define('SGBD', "mysql");
-
-    //nom des tables
-    define('T_USERS', "users");
+   //
+    define('API_URL', "https://api-customotel.herokuapp.com");
+    
+    define('APIKEY', "ornela-7111cd5742ae490ea3a9");
+    define('TOKEN', "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOm51bGwsImhvc3RlbElkIjo1LCJhcGlLZXkiOiJvcm5lbGEtNzExMWNkNTc0MmFlNDkwZWEzYTkiLCJpYXQiOjE2MTkxMzkyMTgsImV4cCI6MTY1MDY3NTIxOH0.23ZndL2xqzFPqkLWw4gQ1f5PyLIo74a9SwYpAhgjSGE");
 
     //configuration public
-    $base  = "http://".$_SERVER['HTTP_HOST'];
+    $base  = "https://".$_SERVER['HTTP_HOST'];
     $base .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
     define('BASE_URL', $base.'public/');
     define('REQUEST', $base.'controllers/');

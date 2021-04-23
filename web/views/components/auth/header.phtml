@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
     <link rel="stylesheet" href="<?=BASE_URL.'styles/reset.css'?>">
     <link rel="stylesheet" href="<?=BASE_URL.'styles/style.css'?>">
     <link rel="stylesheet" href="<?=BASE_URL.'styles/addUsers.css'?>">
@@ -12,5 +12,18 @@
     <link rel="stylesheet" href="<?=BASE_URL.'styles/login.css'?>">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Connexion</title>
+
+    <script>
+      let headers = {
+        "Content-Type": "application/json",
+        "Api-Key": <?php echo json_encode(APIKEY); ?>,
+        "Authorization": <?php echo json_encode(TOKEN); ?>
+      }
+    </script>
+
+    <script>
+      let url = <?php echo json_encode(API_URL); ?>;
+      let urlLogin = <?php echo json_encode(REQUEST.'ctrl_login.php'); ?>;
+    </script>
 </head>
 <body>
